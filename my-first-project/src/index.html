@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MyFirstProject</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img src="image/image1.jpg" alt="">
+  <div class="header">
+    <h1>Exchange Rates</h1>
+    <p id="exchange-rate"></p>
+</div>
+<div class="converter">
+    <div>
+        <label for="fromCurrency">From Currency:</label>
+        <select id="fromCurrency">
+            <option value="UAH">UAH</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select>
+        <input type="number" id="fromAmount" placeholder="Enter amount">
+    </div>
+    <div>
+        <label for="toCurrency">To Currency:</label>
+        <select id="toCurrency">
+            <option value="UAH">UAH</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select>
+        <input type="number" id="toAmount" placeholder="Converted amount" readonly>
+    </div>
+</div>
+  <app-root></app-root>
+  <script src="main.js"></script>
+</body>
+</html>
